@@ -1,12 +1,12 @@
-﻿# USGS Global Earthquake Monitor | Kafka Â· PySpark Â· Elasticsearch Â· Kibana
+# USGS Global Earthquake Monitor | Elasticsearch, Kibana
 
-> **Type:** Streaming | **Stack:** USGS API â†’ Kafka â†’ PySpark â†’ Elasticsearch â†’ Kibana â†’ Airflow
+**Stack:** USGS API -> Kafka -> PySpark -> Elasticsearch -> Kibana -> Airflow
 
 ## Key Metrics
-- **10,000â€“15,000 earthquakes/month** monitored globally
-- **Geo-distance queries:** earthquakes within 2,000km of any location
-- **Tsunami risk detection:** magnitude â‰¥6.5 + shallow + coastal
-- **Real-time Kibana:** geospatial heatmaps + magnitude timelines
+- 10,000-15,000 earthquakes/month monitored globally
+- Geo-distance radius queries: earthquakes within 2,000km of any location
+- Tsunami risk detection: magnitude >= 6.5 + shallow depth + coastal location
+- Real-time Kibana: geospatial heatmaps + magnitude timelines
 
 ## Elasticsearch Geospatial Query
 ```json
@@ -15,7 +15,7 @@
 ```
 
 ## Tech Stack
-Python Â· Apache Kafka Â· PySpark Â· Elasticsearch 8 Â· Kibana Â· Airflow Â· Docker
+Python, Apache Kafka, PySpark, Elasticsearch 8, Kibana, Airflow, Docker
 
 ## Author
-**Ahmad Zulham Hamdan** | [LinkedIn](https://linkedin.com/in/ahmad-zulham-hamdan-665170279) | [GitHub](https://github.com/zulham-tech)
+Ahmad Zulham Hamdan | https://linkedin.com/in/ahmad-zulham-hamdan-665170279
